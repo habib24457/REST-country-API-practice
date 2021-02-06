@@ -25,9 +25,14 @@ eachDiv.className='countryCSS';
 const countryInfo = `
 <h3 class="country-name">${country.name}</h3>
 <p>${country.capital}</p>
+<button onclick="displayCountryDetail('${country.name}')">Details</button>
 `
 eachDiv.innerHTML = countryInfo;
 countryDiv.appendChild(eachDiv);
 
 }
+}
+
+const displayCountryDetail = name =>{
+console.log(name);
 }
